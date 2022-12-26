@@ -1,22 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import { Typography } from 'antd';
+
+const { Text, Title } = Typography;
 
 const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <p>
-	  Matts App
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Title level={1} style={{fontFamily: 'cinzel,serif'}}>
+        Main Header
+      </Title>
+      <Title level={2}>
+        Sub Header
+      </Title>
+      <Text>
+        This is some text about the site.
+      </Text>
     </div>
   );
 }
